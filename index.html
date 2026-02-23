@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SONIC PULSE — Festival 2025</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ════════ HERO ════════ -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="badge">▶ 12, 13 &amp; 14 DE DEZEMBRO · SÃO PAULO</div>
+        <h1 class="hero-title">SONIC<br /><span>PULSE</span></h1>
+        <p class="hero-sub">
+          // FESTIVAL DE MÚSICA ELETRÔNICA & ALTERNATIVA //
+        </p>
+        <div class="hero-cta">
+          <a href="#inscricao" class="btn btn-primary">GARANTIR INGRESSO</a>
+          <a href="#programacao" class="btn btn-outline">VER PROGRAMAÇÃO</a>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL ↓</div>
+    </section>
+
+    <!-- ════════ MÍDIA ════════ -->
+    <section id="midia">
+      <div class="container">
+        <p class="section-label">// 001 — EXPERIÊNCIA</p>
+        <h2 class="section-title">VEJA, OUÇA<br />E SINTA</h2>
+
+        <div class="media-grid">
+          <!-- VIDEO -->
+          <div class="media-card wide">
+            <video
+              controls
+              poster="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80"
+            >
+              <source
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4"
+              />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <div class="media-info">
+              <h3>Aftermovie — Sonic Pulse 2024</h3>
+              <span class="media-tag tag-video">▶ VIDEO</span>
+            </div>
+          </div>
+
+          <!-- IMAGE -->
+          <div class="media-card">
+            <img
+              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80"
+              alt="Palco principal com luzes neon"
+            />
+            <div class="media-info">
+              <h3>Palco Principal — Noite 1</h3>
+              <span class="media-tag tag-img">◉ FOTO</span>
+            </div>
+          </div>
+
+          <!-- IMAGE 2 -->
+          <div class="media-card">
+            <img
+              src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=800&q=80"
+              alt="Crowd energia total"
+            />
+            <div class="media-info">
+              <h3>Crowd — Energia Total</h3>
+              <span class="media-tag tag-img">◉ FOTO</span>
+            </div>
+          </div>
+
+          <!-- AUDIO x2 -->
+          <div class="media-card">
+            <div class="audio-player">
+              <p class="audio-title">Track Preview — Opening Set</p>
+              <p class="audio-artist">DJ VOLTAGE × SOLARIS</p>
+              <audio controls>
+                <source
+                  src="https://www.w3schools.com/html/horse.mp3"
+                  type="audio/mpeg"
+                />
+                Seu navegador não suporta áudio HTML5.
+              </audio>
+            </div>
+            <div class="media-info">
+              <h3>Preview Exclusivo</h3>
+              <span class="media-tag tag-audio">♪ ÁUDIO</span>
+            </div>
+          </div>
+
+          <div class="media-card">
+            <div class="audio-player">
+              <p class="audio-title">Ambient Warmup — Stage 2</p>
+              <p class="audio-artist">NEON DRIFT</p>
+              <audio controls>
+                <source
+                  src="https://www.w3schools.com/html/horse.mp3"
+                  type="audio/mpeg"
+                />
+                Seu navegador não suporta áudio HTML5.
+              </audio>
+            </div>
+            <div class="media-info">
+              <h3>Trilha do Festival</h3>
+              <span class="media-tag tag-audio">♪ ÁUDIO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ PROGRAMAÇÃO ════════ -->
+    <section id="programacao" class="schedule-section">
+      <div class="container">
+        <p class="section-label">// 002 — LINEUP</p>
+        <h2 class="section-title">PROGRAMAÇÃO<br />DE SHOWS</h2>
+
+        <div class="schedule-tabs">
+          <button class="tab active" onclick="showDay(this, 'dia1')">
+            12 DEZ — DIA 1
+          </button>
+          <button class="tab" onclick="showDay(this, 'dia2')">
+            13 DEZ — DIA 2
+          </button>
+          <button class="tab" onclick="showDay(this, 'dia3')">
+            14 DEZ — DIA 3
+          </button>
+        </div>
+
+        <div id="dia1">
+          <table>
+            <thead>
+              <tr>
+                <th>Horário</th>
+                <th>Artista</th>
+                <th>Palco</th>
+                <th>Duração</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time">18:00</td>
+                <td>
+                  <div class="artist-name">LUNA NOIR</div>
+                  <div class="artist-genre">Dream Pop / Indie</div>
+                </td>
+                <td><span class="stage-badge stage-alt">PALCO ALT</span></td>
+                <td>60 min</td>
+              </tr>
+              <tr>
+                <td class="time">19:30</td>
+                <td>
+                  <div class="artist-name">VOLTAGEM</div>
+                  <div class="artist-genre">Techno / Industrial</div>
+                </td>
+                <td><span class="stage-badge stage-vip">PALCO VIP</span></td>
+                <td>75 min</td>
+              </tr>
+              <tr>
+                <td class="time">21:00</td>
+                <td>
+                  <div class="artist-name">SOLARIS B2B NEON DRIFT</div>
+                  <div class="artist-genre">Electronic / Ambient</div>
+                </td>
+                <td><span class="stage-badge stage-main">PALCO MAIN</span></td>
+                <td>90 min</td>
+              </tr>
+              <tr>
+                <td class="time">23:00</td>
+                <td>
+                  <div class="artist-name">DJ VOLTAGE</div>
+                  <div class="artist-genre">Drum & Bass / Club</div>
+                </td>
+                <td><span class="stage-badge stage-main">PALCO MAIN</span></td>
+                <td>120 min</td>
+              </tr>
+              <tr>
+                <td class="time">01:00</td>
+                <td>
+                  <div class="artist-name">CLOSING SET — ANON</div>
+                  <div class="artist-genre">Dark Techno</div>
+                </td>
+                <td><span class="stage-badge stage-vip">PALCO VIP</span></td>
+                <td>90 min</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="dia2" style="display: none">
+          <table>
+            <thead>
+              <tr>
+                <th>Horário</th>
+                <th>Artista</th>
+                <th>Palco</th>
+                <th>Duração</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time">17:30</td>
+                <td>
+                  <div class="artist-name">CASSANDRA RAY</div>
+                  <div class="artist-genre">R&B / Soul Electro</div>
+                </td>
+                <td><span class="stage-badge stage-alt">PALCO ALT</span></td>
+                <td>60 min</td>
+              </tr>
+              <tr>
+                <td class="time">19:00</td>
+                <td>
+                  <div class="artist-name">BASS REACTOR</div>
+                  <div class="artist-genre">Dubstep / Bass Music</div>
+                </td>
+                <td><span class="stage-badge stage-main">PALCO MAIN</span></td>
+                <td>75 min</td>
+              </tr>
+              <tr>
+                <td class="time">21:30</td>
+                <td>
+                  <div class="artist-name">ATRIUM</div>
+                  <div class="artist-genre">Progressive House</div>
+                </td>
+                <td><span class="stage-badge stage-vip">PALCO VIP</span></td>
+                <td>90 min</td>
+              </tr>
+              <tr>
+                <td class="time">00:00</td>
+                <td>
+                  <div class="artist-name">HYPERWAVE</div>
+                  <div class="artist-genre">Melodic Techno</div>
+                </td>
+                <td><span class="stage-badge stage-main">PALCO MAIN</span></td>
+                <td>120 min</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="dia3" style="display: none">
+          <table>
+            <thead>
+              <tr>
+                <th>Horário</th>
+                <th>Artista</th>
+                <th>Palco</th>
+                <th>Duração</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time">18:30</td>
+                <td>
+                  <div class="artist-name">VOID SYSTEM</div>
+                  <div class="artist-genre">Industrial EBM</div>
+                </td>
+                <td><span class="stage-badge stage-alt">PALCO ALT</span></td>
+                <td>60 min</td>
+              </tr>
+              <tr>
+                <td class="time">20:00</td>
+                <td>
+                  <div class="artist-name">PULSE GENERATOR</div>
+                  <div class="artist-genre">Acid Techno</div>
+                </td>
+                <td><span class="stage-badge stage-vip">PALCO VIP</span></td>
+                <td>90 min</td>
+              </tr>
+              <tr>
+                <td class="time">22:00</td>
+                <td>
+                  <div class="artist-name">NEON DRIFT + LUNA NOIR</div>
+                  <div class="artist-genre">Live AV Performance</div>
+                </td>
+                <td><span class="stage-badge stage-main">PALCO MAIN</span></td>
+                <td>90 min</td>
+              </tr>
+              <tr>
+                <td class="time">00:30</td>
+                <td>
+                  <div class="artist-name">GRAND FINALE — ALL STARS</div>
+                  <div class="artist-genre">B2B2B Special</div>
+                </td>
+                <td><span class="stage-badge stage-main">PALCO MAIN</span></td>
+                <td>150 min</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ INSCRIÇÃO ════════ -->
+    <section id="inscricao" class="form-section">
+      <div class="container">
+        <div class="form-layout">
+          <div class="form-side-info">
+            <p class="section-label">// 003 — INGRESSOS</p>
+            <h2 class="section-title">GARANTA<br />SUA VAGA</h2>
+            <p class="form-desc">
+              Não perca a edição mais aguardada do Sonic Pulse. Inscrições
+              limitadas por categoria. Processo rápido, confirmação imediata.
+            </p>
+
+            <div class="perks">
+              <div class="perk">
+                <div class="perk-icon">⚡</div>
+                <div class="perk-text">
+                  <h4>Acesso Instantâneo</h4>
+                  <p>QR Code enviado por e-mail em segundos</p>
+                </div>
+              </div>
+              <div class="perk">
+                <div class="perk-icon">🔒</div>
+                <div class="perk-text">
+                  <h4>Pagamento Seguro</h4>
+                  <p>Criptografia SSL em todas as transações</p>
+                </div>
+              </div>
+              <div class="perk">
+                <div class="perk-icon">🎁</div>
+                <div class="perk-text">
+                  <h4>Kit Exclusivo</h4>
+                  <p>Inscritos recebem brinde surpresa no evento</p>
+                </div>
+              </div>
+              <div class="perk">
+                <div class="perk-icon">🔄</div>
+                <div class="perk-text">
+                  <h4>Transferência Livre</h4>
+                  <p>Transferência de ingressos sem custo até 48h antes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORM CARD -->
+          <div class="form-card">
+            <div class="form-header">
+              <h3>FORMULÁRIO DE INSCRIÇÃO</h3>
+              <p>Preencha todos os campos para confirmar seu ingresso</p>
+            </div>
+
+            <form
+              id="registrationForm"
+              onsubmit="handleSubmit(event)"
+              novalidate
+            >
+              <div class="field-group">
+                <label for="nome">Nome Completo *</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Ex: João da Silva"
+                  required
+                />
+              </div>
+
+              <div class="field-group">
+                <label for="email">E-mail *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="seunome@email.com"
+                  required
+                />
+              </div>
+
+              <div class="field-group">
+                <label for="telefone">Telefone / WhatsApp *</label>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(11) 9 0000-0000"
+                  required
+                />
+              </div>
+
+              <div class="field-group">
+                <label>Tipo de Ingresso *</label>
+                <div class="tickets-grid">
+                  <div class="ticket-option">
+                    <input
+                      type="radio"
+                      id="pista"
+                      name="ingresso"
+                      value="pista"
+                      required
+                    />
+                    <label class="ticket-label" for="pista">
+                      <span class="t-icon">🎵</span>
+                      <span class="t-name">Pista</span>
+                      <span class="t-price">R$ 180</span>
+                    </label>
+                  </div>
+                  <div class="ticket-option">
+                    <input type="radio" id="vip" name="ingresso" value="vip" />
+                    <label class="ticket-label" for="vip">
+                      <span class="t-icon">⭐</span>
+                      <span class="t-name">VIP</span>
+                      <span class="t-price">R$ 380</span>
+                    </label>
+                  </div>
+                  <div class="ticket-option">
+                    <input
+                      type="radio"
+                      id="camarote"
+                      name="ingresso"
+                      value="camarote"
+                    />
+                    <label class="ticket-label" for="camarote">
+                      <span class="t-icon">👑</span>
+                      <span class="t-name">Camarote</span>
+                      <span class="t-price">R$ 650</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <label class="checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter" />
+                <span
+                  >Quero receber atualizações, promoções e novidades do Sonic
+                  Pulse por e-mail</span
+                >
+              </label>
+
+              <button type="submit" class="submit-btn">
+                CONFIRMAR INSCRIÇÃO →
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ FOOTER ════════ -->
+    <footer>
+      <div class="footer-logo">SONIC <span>PULSE</span></div>
+      <p class="footer-text">
+        © 2025 Sonic Pulse Festival · São Paulo, Brasil · Todos os direitos
+        reservados
+      </p>
+    </footer>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+      <strong>🎉 Inscrição confirmada!</strong>
+      Você receberá os detalhes no seu e-mail em breve.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
