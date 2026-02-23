@@ -29,6 +29,105 @@ body {
   overflow-x: hidden;
 }
 
+/* ════════ NAVBAR ════════ */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  background: rgba(10, 10, 15, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.nav-logo span {
+  color: #00f0ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #00f0ff;
+}
+
+.nav-cta {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #00f0ff;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.nav-cta:hover {
+  background: #00f0ff;
+  color: #000;
+}
+
+/* Menu Mobile */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  width: 25px;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #0b0b12;
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}
+
 /* ── HERO ── */
 .hero {
   position: relative;
