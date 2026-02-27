@@ -49,7 +49,7 @@ progress.addEventListener("input", (e) => {
 
 loadTrack(0);
 
-// FORMULÁRIO SIMPLES
+// FORMULÁRIO SIMPLES neh
 const form = document.getElementById("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();

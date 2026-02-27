@@ -349,6 +349,7 @@ body {
   background: rgba(0, 230, 195, 0.1);
 }
 
+/* error customizado */
 .error {
   color: var(--accent2);
   font-size: 0.8rem;
