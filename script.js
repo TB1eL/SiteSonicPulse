@@ -20,23 +20,6 @@ function loadTrack(index) {
   trackName.innerText = tracks[current].name;
   audio.src = tracks[current].file; // vazio = simulação
   progress.value = 0;
-// Toggle menu mobile
-const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
-
-navToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-// Tab switching
-function showDay(btn, id) {
-  document
-    .querySelectorAll(".tab")
-    .forEach((t) => t.classList.remove("active"));
-  btn.classList.add("active");
-  ["dia1", "dia2", "dia3"].forEach((d) => {
-    document.getElementById(d).style.display = d === id ? "block" : "none";
-  });
 }
 
 playBtn.addEventListener("click", () => {
