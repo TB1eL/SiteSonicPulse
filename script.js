@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // SIMPLES TABS DE PROGRAMAÇÃO (se quiser manter 3 dias, mas deixei só um resumo)
 // Caso queira adicionar mais dias, é fácil. Mas preferi simplificar ao máximo.
 
@@ -21,7 +20,6 @@ function loadTrack(index) {
   trackName.innerText = tracks[current].name;
   audio.src = tracks[current].file; // vazio = simulação
   progress.value = 0;
-=======
 // Toggle menu mobile
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
@@ -39,7 +37,6 @@ function showDay(btn, id) {
   ["dia1", "dia2", "dia3"].forEach((d) => {
     document.getElementById(d).style.display = d === id ? "block" : "none";
   });
->>>>>>> 5d23e19916ac58429c0cfef93bdb06bb50eee0ad
 }
 
 playBtn.addEventListener("click", () => {
